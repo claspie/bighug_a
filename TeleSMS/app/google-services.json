@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "54453476428",
+    "firebase_url": "https://telesms-21779.firebaseio.com",
+    "project_id": "telesms-21779",
+    "storage_bucket": "telesms-21779.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54453476428:android:a7bd5f52d2af1672",
+        "android_client_info": {
+          "package_name": "com.teleclub.telesms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54453476428-odif2pspls83g13f4shjvj57jfp40rfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQWa58fiuT2azwuhk2RP6egN6t5MmDsew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54453476428-odif2pspls83g13f4shjvj57jfp40rfu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.taishi-y:flipprogressdialog:0.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6faa4cd14ee83fc3b51900b9498a551/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6faa4cd14ee83fc3b51900b9498a551/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.taishi-y/flipprogressdialog/0.1.0/63cf7113a1fda9ccc52f0593c9c26d7dbca3394a/flipprogressdialog-0.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

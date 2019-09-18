@@ -1,0 +1,4 @@
+# Referenced at E:\rik\New folder\android\TeleSMS\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:36
+-keep class android.support.v4.app.CoreComponentFactory { <init>(); }
+# Referenced at E:\rik\New folder\android\TeleSMS\app\build\intermediates\merged_manifests\release\AndroidManifest.xml:36
+-keep class com.teleclub.telesms.TeleSMSApp { <init>(); }

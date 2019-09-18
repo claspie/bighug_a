@@ -1,0 +1,4 @@
+#Fri May 17 04:02:00 CST 2019
+base.0=E\:\\rik\\New folder\\android\\TeleSMS\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
+path.0=classes.dex
+renamed.0=classes.dex

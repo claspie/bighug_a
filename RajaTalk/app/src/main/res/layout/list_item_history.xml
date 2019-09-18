@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:gravity="center_vertical"
+    android:paddingStart="15dp"
+    android:paddingEnd="20dp"
+    android:minHeight="80dp"
+    android:background="@drawable/bg_call_hisotry_item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/btn_delete"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/icon_delete"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txt_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="7dp"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimary"
+                android:text="+1 213-289-5005"/>
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="7dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorGray"
+                android:text="Apr. 1, 2019 23:58"/>
+
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/btn_call"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/icon_recall"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
