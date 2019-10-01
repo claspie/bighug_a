@@ -15,4 +15,5 @@
     <color name="color_tv_outline">#1d97d5</color>
     <color name="themecolor">#42b883</color>
     <color name="logobg">#028002</color>
+    <color name="loginbg">#35495e</color>
 </resources>
