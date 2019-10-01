@@ -13,4 +13,6 @@
     <color name="colorDisabled">#88c0e3</color>
 
     <color name="color_tv_outline">#1d97d5</color>
+    <color name="themecolor">#42b883</color>
+    <color name="logobg">#028002</color>
 </resources>
