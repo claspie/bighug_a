@@ -46,46 +46,55 @@
                 android:textColor="@color/colorWhite"/>
 
 
-            <LinearLayout
+            <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:background="@drawable/bg_round_rect"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:padding="25dp">
+
+
+
 
                 <EditText
                     android:id="@+id/txt_phone_number"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="40dp"
-                    android:layout_marginStart="10dp"
-                    android:background="@null"
+                    android:background="@color/colorWhite"
                     android:hint="@string/phone_number"
                     android:inputType="phone"
                     android:paddingStart="5dp"
                     android:paddingEnd="5dp"
                     android:textColor="@color/colorBlack"
-                    android:textSize="16sp" />
+                    android:drawableEnd="@drawable/usericonsize"
+                    android:textSize="16sp"
+                    android:layout_margin="10dp"
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:src="@drawable/icon_user" />
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_signup"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            </LinearLayout>
 
-            <Button
-                android:id="@+id/btn_signup"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/bg_default_button"
-                android:text="@string/sign_up"
-                android:textColor="@color/colorWhite"
-                android:textSize="16sp" />
+                <Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="@color/themecolor"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"
+                    android:layout_marginStart="10dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+
+
+
+
 
         </LinearLayout>
 
@@ -105,7 +114,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/already_have_account"
-                android:textColor="@color/colorLightGray"
+                android:textColor="@color/colorWhite"
                 android:textSize="14sp" />
 
             <TextView
@@ -114,7 +123,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:text="@string/sign_in"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/themecolor"
                 android:textSize="16sp" />
 
         </LinearLayout>
