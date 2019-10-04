@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "761201175888",
+    "firebase_url": "https://bighug-950cf.firebaseio.com",
+    "project_id": "bighug-950cf",
+    "storage_bucket": "bighug-950cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761201175888:android:e93571e790dfb741",
+        "android_client_info": {
+          "package_name": "com.teleclub.rabbtel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761201175888-g7akclc1dc5ujobg2gujlvnas4a9oh84.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGA7SiRKNSrX7QJIbhtwtFyReKY7OrOxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761201175888-g7akclc1dc5ujobg2gujlvnas4a9oh84.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

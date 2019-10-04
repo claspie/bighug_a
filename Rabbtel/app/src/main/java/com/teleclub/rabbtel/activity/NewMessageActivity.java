@@ -6,26 +6,17 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.ContactsContract;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.taishi.flipprogressdialog.FlipProgressDialog;
 import com.teleclub.rabbtel.R;
-import com.teleclub.rabbtel.util.AppData;
 import com.teleclub.rabbtel.util.Constants;
-import com.teleclub.rabbtel.util.Util;
 
-import org.json.JSONObject;
-
-import java.io.DataOutputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class NewMessageActivity extends AppCompatActivity {

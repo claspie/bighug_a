@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "761201175888",
-    "firebase_url": "https://bighug-950cf.firebaseio.com",
-    "project_id": "bighug-950cf",
-    "storage_bucket": "bighug-950cf.appspot.com"
+    "project_number": "467442485761",
+    "firebase_url": "https://inaija-13048.firebaseio.com",
+    "project_id": "inaija-13048",
+    "storage_bucket": "inaija-13048.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:761201175888:android:e93571e790dfb741",
+        "mobilesdk_app_id": "1:467442485761:android:52a2681002c0dbcdd7ce00",
         "android_client_info": {
           "package_name": "com.teleclub.rabbtel"
         }
       },
       "oauth_client": [
         {
-          "client_id": "761201175888-g7akclc1dc5ujobg2gujlvnas4a9oh84.apps.googleusercontent.com",
+          "client_id": "467442485761-4mqss89ngdlhtuesaksgsaciv4p8qaj6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBGA7SiRKNSrX7QJIbhtwtFyReKY7OrOxE"
+          "current_key": "AIzaSyAlzZ6HPMRDoI5Jdx2VTfg3QdcOZZ2sr2c"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "761201175888-g7akclc1dc5ujobg2gujlvnas4a9oh84.apps.googleusercontent.com",
+              "client_id": "467442485761-4mqss89ngdlhtuesaksgsaciv4p8qaj6.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

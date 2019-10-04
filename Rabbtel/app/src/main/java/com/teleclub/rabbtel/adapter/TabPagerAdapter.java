@@ -1,11 +1,10 @@
 package com.teleclub.rabbtel.adapter;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.teleclub.rabbtel.fragment.CallFragment;
-import com.teleclub.rabbtel.fragment.CallHistoryFragment;
 import com.teleclub.rabbtel.fragment.CallbackFragment;
 import com.teleclub.rabbtel.fragment.TopUpFragment;
 
