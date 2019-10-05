@@ -33,8 +33,8 @@ import java.util.Date;
 public class CallFragment extends Fragment {
     private EditText m_txtContacts;
     private TextView m_txtCardNumber;
-    private ListView m_lvCallHistory;
-    private CallHistoryAdapter m_callHistoryAdapter;
+   // private ListView m_lvCallHistory;
+   // private CallHistoryAdapter m_callHistoryAdapter;
 
     private MainActivity m_parent;
     private String m_cardNumber = "";
@@ -73,7 +73,7 @@ public class CallFragment extends Fragment {
         });
         m_txtCardNumber = view.findViewById(R.id.txt_card_no);
         m_txtCardNumber.setText(m_cardNumber);
-        m_lvCallHistory = view.findViewById(R.id.lst_call_history);
+//        m_lvCallHistory = view.findViewById(R.id.lst_call_history);
         view.findViewById(R.id.btn_call).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -162,7 +162,7 @@ public class CallFragment extends Fragment {
     private void updateCallHistoryTable() {
         ArrayList<CallRecord> callRecords = AppData.dbHelper.getCallHistory();
 
-        m_callHistoryAdapter = new CallHistoryAdapter(this, getContext(), callRecords);
-        m_lvCallHistory.setAdapter(m_callHistoryAdapter);
+      //  m_callHistoryAdapter = new CallHistoryAdapter(this, getContext(), callRecords);
+      //  m_lvCallHistory.setAdapter(m_callHistoryAdapter);
     }
 }

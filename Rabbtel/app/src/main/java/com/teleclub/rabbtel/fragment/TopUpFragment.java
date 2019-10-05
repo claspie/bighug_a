@@ -24,7 +24,7 @@ import com.teleclub.rabbtel.util.Util;
 public class TopUpFragment extends Fragment {
 
     private WebView m_webview;
-    private TextView m_txtNotAvailable;
+   // private TextView m_txtNotAvailable;
     private ProgressBar m_progressBar;
 
     public TopUpFragment() {
@@ -45,7 +45,7 @@ public class TopUpFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_topup, container, false);
         m_webview = view.findViewById(R.id.webview);
-        m_txtNotAvailable = view.findViewById(R.id.txt_not_available);
+      //  m_txtNotAvailable = view.findViewById(R.id.txt_not_available);
         m_progressBar = view.findViewById(R.id.progress);
         initialize();
 
@@ -55,31 +55,31 @@ public class TopUpFragment extends Fragment {
     private void initialize() {
         if (AppData.account == null || m_webview == null) return;
 
-        m_webview.getSettings().setJavaScriptEnabled(true);
-        m_webview.getSettings().setUserAgentString("Mozilla/5.0 (iPhone; CPU iPhone OS 9_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13E233 Safari/601.1");
+//        m_webview.getSettings().setJavaScriptEnabled(true);
+//        m_webview.getSettings().setUserAgentString("Mozilla/5.0 (iPhone; CPU iPhone OS 9_3 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13E233 Safari/601.1");
 
-        m_webview.setWebViewClient(new WebViewClient() {
-            @SuppressWarnings("deprecation")
-            @Override
-            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-                m_progressBar.setVisibility(View.GONE);
-            }
+//        m_webview.setWebViewClient(new WebViewClient() {
+//            @SuppressWarnings("deprecation")
+//            @Override
+//            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+//                m_progressBar.setVisibility(View.GONE);
+//            }
+//
+//            @TargetApi(android.os.Build.VERSION_CODES.M)
+//            @Override
+//            public void onReceivedError(WebView view, WebResourceRequest req, WebResourceError rerr) {
+//                onReceivedError(view, rerr.getErrorCode(), rerr.getDescription().toString(), req.getUrl().toString());
+//                m_progressBar.setVisibility(View.GONE);
+//            }
+//
+//            @Override
+//            public void onPageFinished(WebView view, String url) {
+//                // do your stuff here
+//                m_progressBar.setVisibility(View.GONE);
+//            }
+//        });
 
-            @TargetApi(android.os.Build.VERSION_CODES.M)
-            @Override
-            public void onReceivedError(WebView view, WebResourceRequest req, WebResourceError rerr) {
-                onReceivedError(view, rerr.getErrorCode(), rerr.getDescription().toString(), req.getUrl().toString());
-                m_progressBar.setVisibility(View.GONE);
-            }
-
-            @Override
-            public void onPageFinished(WebView view, String url) {
-                // do your stuff here
-                m_progressBar.setVisibility(View.GONE);
-            }
-        });
-
-        updateTopupStatus();
+     //   updateTopupStatus();
     }
 
     public void refresh() {
@@ -88,7 +88,7 @@ public class TopUpFragment extends Fragment {
 
     private void updateTopupStatus() {
 //        if (AppData.canTopup) {
-            m_txtNotAvailable.setVisibility(View.GONE);
+       //     m_txtNotAvailable.setVisibility(View.GONE);
             m_webview.setVisibility(View.VISIBLE);
 
             String url = Constants.BASE_URL + "/apptopup?imei=" + Util.getUniqueIMEI(getContext()) +

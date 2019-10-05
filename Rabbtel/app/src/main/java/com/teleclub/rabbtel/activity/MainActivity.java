@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TabPagerAdapter m_pagerAdapter = null;
     private int m_position = 0;
-    private TextView m_txtBalance;
+   // private TextView m_txtBalance;
     private ViewPager m_viewPager = null;
     private FlipProgressDialog m_indicator;
 
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
         m_viewPager.setEnabled(AppData.account != null);
 
-        m_txtBalance = findViewById(R.id.txt_balance);
+//        m_txtBalance = findViewById(R.id.txt_balance);
 
         List<Integer> imageList = new ArrayList<>();
         imageList.add(R.drawable.icon_loading);
@@ -395,7 +395,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void updateBalance() {
         String balance = "Balance  $" + Util.getDecimalString(AppData.balance, 2);
-        m_txtBalance.setText(balance);
+       // m_txtBalance.setText(balance);
     }
 
     private void hideKeyboard() {
