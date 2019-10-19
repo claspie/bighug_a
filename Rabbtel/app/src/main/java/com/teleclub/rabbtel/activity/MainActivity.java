@@ -1,6 +1,7 @@
 package com.teleclub.rabbtel.activity;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -20,6 +21,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,6 +41,7 @@ import com.teleclub.rabbtel.network.result.LoginResult;
 import com.teleclub.rabbtel.network.result.TokenResult;
 import com.teleclub.rabbtel.util.AppData;
 import com.teleclub.rabbtel.util.Constants;
+import com.teleclub.rabbtel.util.FullScreenHelper;
 import com.teleclub.rabbtel.util.Util;
 
 import org.json.JSONArray;
@@ -54,17 +58,33 @@ import rx.schedulers.Schedulers;
 
 public class MainActivity extends AppCompatActivity {
     private Context m_Context;
+    private FullScreenHelper fullScreenHelper;
 
     private TabPagerAdapter m_pagerAdapter = null;
     private int m_position = 0;
    // private TextView m_txtBalance;
     private ViewPager m_viewPager = null;
     private FlipProgressDialog m_indicator;
+    private Activity currentActivity ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+//        WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+//        try
+//        {
+//            this.getSupportActionBar();
+//            this.getSupportActionBar().hide();
+//        }
+//        catch (NullPointerException e){}
+
         setContentView(R.layout.activity_main);
+
+
         m_Context = this;
         initialize();
     }

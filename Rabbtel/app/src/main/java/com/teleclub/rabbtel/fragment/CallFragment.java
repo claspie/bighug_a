@@ -33,11 +33,12 @@ import java.util.Date;
 public class CallFragment extends Fragment {
     private EditText m_txtContacts;
     private TextView m_txtCardNumber;
-   // private ListView m_lvCallHistory;
-   // private CallHistoryAdapter m_callHistoryAdapter;
 
     private MainActivity m_parent;
     private String m_cardNumber = "";
+    private TextView one,two,three, four, five,six,seven,eight,nine,zero,star,hash,dialvalue,clear,delete;
+
+
 
     public CallFragment() {
         // Required empty public constructor
@@ -83,7 +84,182 @@ public class CallFragment extends Fragment {
         m_txtContacts = view.findViewById(R.id.txt_contacts);
         updateCallHistoryTable();
 
+        initComponent(view);
+
+
         return view;
+    }
+//
+//    void appendDial(final TextView dialpad, TextView textView, final String number){
+//        textView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                dialpad.append(number);
+//            }
+//        });
+//
+//    }
+
+    public String method(String str) {
+        if (str != null && str.length() > 0 && str.charAt(str.length() - 1) == 'x') {
+            str = str.substring(0, str.length() - 1);
+        }
+        return str;
+    }
+
+//    void deleteone(final TextView dialpad, TextView textView){
+//        textView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//               String value =  method(dialpad.getText().toString());
+//                dialpad.setText(value);
+//            }
+//        });
+//
+//    }
+
+    void clearall(final TextView dialpad, TextView textView){
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialpad.setText("");
+            }
+        });
+
+    }
+
+
+
+
+
+    void initComponent(View v){
+        dialvalue = v.findViewById(R.id.dialvalue);
+
+        one = v.findViewById(R.id.one);
+        two = v.findViewById(R.id.two);
+        three = v.findViewById(R.id.three);
+        four = v.findViewById(R.id.four);
+        five = v.findViewById(R.id.five);
+        six = v.findViewById(R.id.six);
+        seven = v.findViewById(R.id.seven);
+        eight = v.findViewById(R.id.eight);
+        nine = v.findViewById(R.id.nine);
+        star = v.findViewById(R.id.star);
+        zero = v.findViewById(R.id.zero);
+        hash = v.findViewById(R.id.hash);
+
+        clear = v.findViewById(R.id.clear);
+        delete = v.findViewById(R.id.delete);
+
+        one.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialvalue.append("1");
+            }
+        });
+
+        two.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialvalue.append("2");
+            }
+        });
+
+        three.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialvalue.append("3");
+            }
+        });
+        four.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialvalue.append("4");
+            }
+        });
+
+        five.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialvalue.append("5");
+            }
+        });
+
+        six.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialvalue.append("6");
+            }
+        });
+
+        seven.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialvalue.append("7");
+            }
+        });
+
+        eight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialvalue.append("8");
+            }
+        });
+
+        nine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialvalue.append("9");
+            }
+        });
+
+        zero.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialvalue.append("0");
+            }
+        });
+
+        star.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialvalue.append("*");
+            }
+        });
+
+        hash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialvalue.append("#");
+            }
+        });
+
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               String value =  method(dialvalue.getText().toString());
+                dialvalue.setText(value);
+            }
+        });
+
+//        appendDial(dialvalue, one,"1");
+//        appendDial(dialvalue, two,"2");
+//        appendDial(dialvalue, three,"3");
+//        appendDial(dialvalue, four,"4");
+//        appendDial(dialvalue, five,"5");
+//        appendDial(dialvalue, six,"6");
+//        appendDial(dialvalue, seven,"7");
+//        appendDial(dialvalue, eight,"8");
+//        appendDial(dialvalue, nine,"9");
+//        appendDial(dialvalue, zero,"0");
+//        appendDial(dialvalue, star,"*");
+//        appendDial(dialvalue, hash,"#");
+        clearall(dialvalue,clear);
+      //  deleteone(dialvalue,delete);
+
+
+
+
     }
 
     @Override
