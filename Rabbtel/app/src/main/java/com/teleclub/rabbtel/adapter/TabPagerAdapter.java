@@ -7,12 +7,14 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import com.teleclub.rabbtel.fragment.CallFragment;
 import com.teleclub.rabbtel.fragment.CallbackFragment;
 import com.teleclub.rabbtel.fragment.TopUpFragment;
+import com.teleclub.rabbtel.fragment.VoipFragment;
 
 public class TabPagerAdapter extends FragmentStatePagerAdapter {
     private int mNumOfTabs;
     private CallFragment m_callFragment;
     private TopUpFragment m_topupFragment;
     private CallbackFragment m_callbackFragment;
+    private VoipFragment m_voipfragment;
 
     public TabPagerAdapter(FragmentManager fm, int NumOfTabs) {
         super(fm);
@@ -21,6 +23,7 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter {
         m_callFragment = CallFragment.newInstance();
         m_topupFragment = TopUpFragment.newInstance();
         m_callbackFragment = CallbackFragment.newInstance();
+        m_voipfragment  = VoipFragment.newInstance();
     }
 
     @Override
@@ -32,6 +35,8 @@ public class TabPagerAdapter extends FragmentStatePagerAdapter {
             case 1:
                 return m_callFragment;
             case 2:
+                return m_voipfragment;
+            case 3:
                 return m_topupFragment;
             default:
                 return null;
